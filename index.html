@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Personnages de Rick et Morty</title>
+	    <link rel="stylesheet" type="text/css" href="feuille.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- permet d'utiliser les icones -->
+	</head>
+
+	<body>
+		<header>
+			<div id="bar_annonce">
+				BIENVENUE DANS LE MONDE DE RICK ET MORTY !
+			</div>
+
+			<div class="navigation">
+				<a href="index.html"><img id="logo" src="logo.png" alt="le logo du site"></a>
+
+				<div class="search-bar">
+	  				<input type="search" id="recherche" placeholder="Rechercher..." />
+					<button id="btnRecherche">
+					   <i class="fas fa-search"></i>
+					</button>
+				</div>
+			</div>
+		</header> 
+
+		<div>
+			<button id="vivant">Vivant</button>
+		    <button id="mort">Mort</button>
+		</div>
+
+		<div class="espacement">
+	    	<div id="divListePerso"></div>  <!-- ce bloc permet d'inserer la liste des personnages -->
+		</div>
+		<div id="retour"></div>
+
+	    <div class="pagination">
+		    <button id="btnPrecedent">Précédent</button>
+		    <button id="btnSuivant">Suivant</button>
+		</div>
+
+	    <script src="script.js"></script>
+	</body>
+</html>
